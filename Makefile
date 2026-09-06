@@ -42,7 +42,6 @@ private: ## Render local outputs, optionally including RESUME_PHONE from .env
 public: override CV := cv.yaml
 public: override OUTPUT_DIR := public
 public: render ## Generate the sanitized public site in public/
-	@$(UV) run python -c "from pathlib import Path; Path('public/index.html').write_text('<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Resume</title></head><body><p><a href=\"resume.html\">View resume</a></p></body></html>', encoding='utf-8')"
 	@$(UV) run python scripts/check_public.py
 
 all: render

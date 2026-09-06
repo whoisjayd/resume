@@ -36,7 +36,6 @@ jobs:
       - name: Render Pages site
         run: |
           make public
-          printf '%s\n' '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resume</title></head><body><p><a href="resume.html">View resume</a></p></body></html>' > public/index.html
 
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
