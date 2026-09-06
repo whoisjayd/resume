@@ -22,6 +22,10 @@ make render
 
 Run `make help` to open the grouped command reference, current configuration, and usage examples. Running `make` without a target shows the same reference.
 
+## Continuous integration and deployment
+
+Run `make check` locally for the same complete RenderCV build used by the pull-request workflow. Every pull request validates the sources; a push to `main` renders the five formats and publishes them to GitHub Pages. The deployed site root contains `resume.html`, `resume.pdf`, `resume.png`, `resume.md`, and `resume.typ`, plus an `index.html` link to the HTML resume. GitHub shows the deployed URL in the workflow's `github-pages` environment; it follows `https://<owner>.github.io/<repository>/`.
+
 ## Layout
 
 - `cv.yaml` - content: experience, skills, projects, education
