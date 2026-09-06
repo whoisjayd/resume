@@ -1,0 +1,124 @@
+cv:
+  name: "Jaydeep Solanki"
+  headline: "Software Engineer: Backend, DevOps & Cloud"
+  location: Bangalore, Karnataka, India
+  email: "contactjaydeepsolanki@gmail.com"
+  phone: "[private phone removed]"
+  website: https://jaydeepsolanki.com
+
+  social_networks:
+    - network: "LinkedIn"
+      username: "solanki-jaydeep"
+    - network: "GitHub"
+      username: "whoisjayd"
+    - network: "X"
+      username: "whynotjaydeep"
+
+  sections:
+
+    experience:
+      - company: "Deloitte"
+        position: Engineering Intern
+        start_date: "2026-01"
+        end_date: present
+        location: "Bangalore, Karnataka, India"
+        highlights:
+          - "Built Python ETL pipelines for data ingestion, transformation, and
+            validation during the virtual phase (Jan-Jun 2026), alongside
+            coursework in SQL, data engineering, analytics, and visualization."
+          - "On site in Bangalore since July 2026, building backend services
+            and working on deployments and cloud infrastructure in a
+            DevOps-focused environment."
+
+      - company: "Ellipsis Infotech"
+        position: "Project Intern"
+        start_date: "2025-05"
+        end_date: "2025-06"
+        location: "Ahmedabad, India"
+        highlights:
+          - "Built an IoT platform to centralize control of 10+ multi-brand AC
+            units from a single dashboard, eliminating incompatible-remote
+            issues across corporate offices."
+          - "Achieved sub-100ms MQTT command latency; deployed on Google Cloud
+            Run using ESP8266, FastAPI, WebSockets, and Next.js."
+          - "Primary developer in a 2-person team, owning device provisioning,
+            command routing, OTA firmware updates, JWT authentication, and
+            real-time state sync."
+
+      - company: "Team Dyaus, Nirma University"
+        position: "Co-Founder and Software Lead"
+        start_date: "2022-11"
+        end_date: "2026-01"
+        location: "Ahmedabad, India"
+        highlights:
+          - "Co-founded a 7-member aerospace club and was the sole software
+            developer across IN-SPACe CanSat India, TEKNOFEST Model Satellite
+            (Turkey), and Flipkart GRID Robotics."
+          - "Built ground station software for each competition to visualize
+            live telemetry, GPS, and sensor data during flight."
+          - "Placed 2nd at IN-SPACe CanSat India 2023 (20+ national finalists),
+            9th at TEKNOFEST 2024 (100+ international teams), and top 10 at
+            Flipkart GRID 5.0 with an IIT Madras invitation."
+          - "Mentored 20+ juniors who went on to place 7th globally (1st in
+            Asia) at TEKNOFEST 2025, 3rd at IN-SPACe Model Rocketry 2025, and
+            win Best Teamwork at IN-SPACe CanSat India 2025."
+
+    skills:
+      - label: "Languages"
+        details: "Python, Go (basics), SQL, Shell"
+      - label: "Backend"
+        details: FastAPI, Flask, Django REST Framework, Node.js (basics)
+      - label: "Databases"
+        details: "PostgreSQL, MySQL, MongoDB, Redis, SQLite, Firebase, InfluxDB"
+      - label: "Cloud & DevOps"
+        details: "AWS, GCP, Docker, Kubernetes, Terraform, GitHub Actions, Linux"
+      - label: "Currently Exploring"
+        details: "Distributed Systems & Architecture Design"
+
+    projects:
+      - name: "NoteWise"
+        date: "[GitHub](https://github.com/whoisjayd/notewise) |
+          [Website](https://www.notewise.click/)"
+        highlights:
+          - "Async Python CLI that converts YouTube videos and playlists into
+            study notes, quizzes, transcripts, and chapter summaries across
+            Markdown, HTML, PDF, and DOCX in 1-2 minutes."
+          - "Published on PyPI with docs at notewise.click; routes AI calls
+            through LiteLLM across 15+ providers with retry logic, cost
+            tracking, chapter detection, smart chunking, and SQLite caching."
+
+      - name: "PulseWatch"
+        date: "[GitHub](https://github.com/whoisjayd/pulsewatch)"
+        highlights:
+          - "Self-hosted status page and uptime monitor: FastAPI service
+            running concurrent asyncio probes against HTTP and TCP targets on
+            a schedule, storing response-time history in SQLite, and opening
+            and resolving incidents automatically on a public status page."
+          - "Sends Slack alerts on state changes and exposes Prometheus
+            metrics; deployed on AWS EC2 with Docker Compose and Terraform,
+            with GitHub Actions running the pytest suite on every push."
+
+      - name: "BlazeServe"
+        date: "[GitHub](https://github.com/whoisjayd/blazeserve)"
+        highlights:
+          - "Python CLI HTTP file server for local network transfers; validated
+            1 Gbps+ throughput against 50 GB files in under 30 seconds with
+            uploads, byte-range requests, streaming ZIPs, TLS, and runtime
+            metrics."
+          - "Tuned with sendfile, mmap fallback, configurable socket buffers,
+            token-bucket rate limiting, and multi-range cache headers; includes
+            SHA256 checksums, benchmark mode, and pytest coverage."
+
+    education:
+      - institution: "Nirma University"
+        area: "Electronics and Communication Engineering"
+        degree: "B.Tech"
+        start_date: "2022-08"
+        end_date: "2026-05"
+        location: "Ahmedabad, Gujarat, India"
+        highlights:
+          - "CGPA: 8.0/10.0. Minor in Data Science."
+          - "Coursework: DSA, Machine Learning, IoT Analytics, Embedded Systems,
+            Digital Signal Processing, Cloud Computing, DBMS."
+
+  custom_connections: []
