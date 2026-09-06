@@ -1,34 +1,34 @@
 cv:
   name: "Jaydeep Solanki"
-  headline: "Software Engineer: Backend, DevOps & Cloud"
-  location: Bangalore, Karnataka, India
-  email: "contactjaydeepsolanki@gmail.com"
+  headline: "Software Engineer | Backend, Cloud & DevOps"
+  location: Bangalore, India
+  email: contactjaydeepsolanki@gmail.com
   phone: "[private phone removed]"
-  website: https://jaydeepsolanki.com
+  website: "https://jaydeep.is-a.dev"
 
   social_networks:
     - network: "LinkedIn"
       username: "solanki-jaydeep"
+
     - network: "GitHub"
       username: "whoisjayd"
-    - network: "X"
-      username: "whynotjaydeep"
 
   sections:
-
     experience:
       - company: "Deloitte"
-        position: Engineering Intern
+        position: "Engineering Intern"
         start_date: "2026-01"
-        end_date: present
+        end_date: "present"
         location: "Bangalore, Karnataka, India"
         highlights:
           - "Built Python ETL pipelines for data ingestion, transformation, and
-            validation during the virtual phase (Jan-Jun 2026), alongside
-            coursework in SQL, data engineering, analytics, and visualization."
-          - "On site in Bangalore since July 2026, building backend services
-            and working on deployments and cloud infrastructure in a
-            DevOps-focused environment."
+            validation during the virtual internship phase (Jan-Jun 2026), while
+            training in SQL, data engineering, analytics, and visualization."
+
+          - "Moved on-site to Bangalore in July 2026 and currently work through
+            hands-on backend, DevOps, and cloud training covering API
+            development, containers, CI/CD, deployments, and cloud
+            infrastructure."
 
       - company: "Ellipsis Infotech"
         position: "Project Intern"
@@ -36,78 +36,98 @@ cv:
         end_date: "2025-06"
         location: "Ahmedabad, India"
         highlights:
-          - "Built an IoT platform to centralize control of 10+ multi-brand AC
-            units from a single dashboard, eliminating incompatible-remote
-            issues across corporate offices."
-          - "Achieved sub-100ms MQTT command latency; deployed on Google Cloud
-            Run using ESP8266, FastAPI, WebSockets, and Next.js."
-          - "Primary developer in a 2-person team, owning device provisioning,
-            command routing, OTA firmware updates, JWT authentication, and
-            real-time state sync."
+          - "Co-developed an IoT platform in a 2-person team for centralized
+            control of multi-brand AC units using ESP8266, FastAPI, PostgreSQL,
+            MQTT, WebSockets, and Next.js."
+
+          - "Built the asynchronous Python backend for device provisioning, zone
+            and batch control, JWT/device authentication, MQTT command routing,
+            live state updates, and telemetry history."
+
+          - "Deployed the backend on Google Cloud Run and worked on device
+            reliability through MQTT over TLS, reconnect with backoff, Wi-Fi
+            provisioning, persistent state, OTA firmware updates, and
+            multi-brand IR support."
 
       - company: "Team Dyaus, Nirma University"
-        position: "Co-Founder and Software Lead"
+        position: "Co-Founder & Software Lead"
         start_date: "2022-11"
         end_date: "2026-01"
         location: "Ahmedabad, India"
         highlights:
-          - "Co-founded a 7-member aerospace club and was the sole software
-            developer across IN-SPACe CanSat India, TEKNOFEST Model Satellite
-            (Turkey), and Flipkart GRID Robotics."
-          - "Built ground station software for each competition to visualize
-            live telemetry, GPS, and sensor data during flight."
-          - "Placed 2nd at IN-SPACe CanSat India 2023 (20+ national finalists),
-            9th at TEKNOFEST 2024 (100+ international teams), and top 10 at
-            Flipkart GRID 5.0 with an IIT Madras invitation."
-          - "Mentored 20+ juniors who went on to place 7th globally (1st in
-            Asia) at TEKNOFEST 2025, 3rd at IN-SPACe Model Rocketry 2025, and
-            win Best Teamwork at IN-SPACe CanSat India 2025."
+          - "Co-founded Team Dyaus and led software development and system
+            integration for aerospace and robotics projects across IN-SPACe
+            CanSat India, TEKNOFEST Model Satellite, and Flipkart GRID."
 
-    skills:
-      - label: "Languages"
-        details: "Python, Go (basics), SQL, Shell"
-      - label: "Backend"
-        details: FastAPI, Flask, Django REST Framework, Node.js (basics)
-      - label: "Databases"
-        details: "PostgreSQL, MySQL, MongoDB, Redis, SQLite, Firebase, InfluxDB"
-      - label: "Cloud & DevOps"
-        details: "AWS, GCP, Docker, Kubernetes, Terraform, GitHub Actions, Linux"
-      - label: "Currently Exploring"
-        details: "Distributed Systems & Architecture Design"
+          - "Built Python ground-station software for live telemetry,
+            command/control, serial and WebSocket communication, GPS tracking,
+            sensor plots, 3D attitude visualization, camera feeds, flight-state
+            monitoring, and black-box logging."
+
+          - "Developed the Raspberry Pi flight stack around pressure,
+            temperature, orientation, GPS, RTC, and RP2040 subsystems using
+            concurrent sensor workers, Flask APIs, WebSocket services, mission
+            logic, fault detection, data logging, and hardware control."
+
+          - "Built the software for an autonomous pick-and-place robot for
+            Flipkart GRID 5.0 using custom YOLO detection, Intel RealSense
+            depth-based 3D localization, inverse kinematics, Arduino motor
+            control, and multithreaded ESP32 camera processing."
+
+          - "Helped the team finish 2nd at IN-SPACe CanSat India 2024, 9th
+            internationally at TEKNOFEST 2024, and reach the Flipkart GRID 5.0
+            national finals; later mentored 20+ members whose teams placed 7th
+            globally (1st in Asia) at TEKNOFEST 2025 and 3rd nationally in Model
+            Rocketry 2025."
 
     projects:
       - name: "NoteWise"
         date: "[GitHub](https://github.com/whoisjayd/notewise) |
-          [Website](https://www.notewise.click/)"
+          [Website](https://www.notewise.click/) |
+          [PyPI](https://pypi.org/project/notewise/)"
         highlights:
-          - "Async Python CLI that converts YouTube videos and playlists into
-            study notes, quizzes, transcripts, and chapter summaries across
-            Markdown, HTML, PDF, and DOCX in 1-2 minutes."
-          - "Published on PyPI with docs at notewise.click; routes AI calls
-            through LiteLLM across 15+ providers with retry logic, cost
-            tracking, chapter detection, smart chunking, and SQLite caching."
+          - "Built and published an async Python CLI that turns YouTube videos,
+            playlists, and courses into structured study notes, quizzes,
+            transcripts, and chapter-aware Markdown, HTML, PDF, and DOCX
+            exports."
 
-      - name: "PulseWatch"
-        date: "[GitHub](https://github.com/whoisjayd/pulsewatch)"
-        highlights:
-          - "Self-hosted status page and uptime monitor: FastAPI service
-            running concurrent asyncio probes against HTTP and TCP targets on
-            a schedule, storing response-time history in SQLite, and opening
-            and resolving incidents automatically on a public status page."
-          - "Sends Slack alerts on state changes and exposes Prometheus
-            metrics; deployed on AWS EC2 with Docker Compose and Terraform,
-            with GitHub Actions running the pytest suite on every push."
+          - "Designed the concurrent LLM pipeline around LiteLLM with
+            multi-provider routing, rate limiting, retries, smart chunking,
+            token/cost tracking, and SQLite caching; releases are shipped
+            through PyPI, Docker, automated CI, and cross-platform builds."
 
       - name: "BlazeServe"
-        date: "[GitHub](https://github.com/whoisjayd/blazeserve)"
+        date: "[GitHub](https://github.com/whoisjayd/blazeserve) |
+          [PyPI](https://pypi.org/project/blazeserve/)"
         highlights:
-          - "Python CLI HTTP file server for local network transfers; validated
-            1 Gbps+ throughput against 50 GB files in under 30 seconds with
-            uploads, byte-range requests, streaming ZIPs, TLS, and runtime
-            metrics."
-          - "Tuned with sendfile, mmap fallback, configurable socket buffers,
-            token-bucket rate limiting, and multi-range cache headers; includes
-            SHA256 checksums, benchmark mode, and pytest coverage."
+          - "Built and published a Python HTTP/1.1 file server with resumable
+            byte and multi-range downloads, uploads, streaming ZIPs, TLS,
+            authentication, conditional caching, and bandwidth throttling."
+
+          - "Optimized file transfers with zero-copy sendfile, windowed mmap
+            fallbacks, socket tuning, and per-IP token-bucket rate limiting;
+            added Prometheus metrics, Kubernetes health probes,
+            Docker/Kubernetes deployment, and cross-platform CI."
+
+    skills:
+      - label: "Languages"
+        details: "Python, SQL, Go (basic), Bash/Shell"
+
+      - label: "Backend & Systems"
+        details:
+          FastAPI, Flask, Django REST Framework, REST APIs, WebSockets, AsyncIO,
+          MQTT, HTTP/TCP
+
+      - label: "Databases & Caching"
+        details: "PostgreSQL, Redis, MongoDB, SQLite, MySQL, InfluxDB"
+
+      - label: "Cloud & DevOps"
+        details:
+          "AWS, GCP, Docker, Kubernetes, OpenShift, Terraform, Helm, GitHub
+          Actions, CI/CD, Docker Compose, Linux"
+
+      - label: "Observability & Testing"
+        details: "Prometheus, Grafana, pytest, Git"
 
     education:
       - institution: "Nirma University"
@@ -116,9 +136,6 @@ cv:
         start_date: "2022-08"
         end_date: "2026-05"
         location: "Ahmedabad, Gujarat, India"
-        highlights:
-          - "CGPA: 8.0/10.0. Minor in Data Science."
-          - "Coursework: DSA, Machine Learning, IoT Analytics, Embedded Systems,
-            Digital Signal Processing, Cloud Computing, DBMS."
+        summary: "CGPA: 8.0/10.0 | Minor in Data Science"
 
   custom_connections: []
