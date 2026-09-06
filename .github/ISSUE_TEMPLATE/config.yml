@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security or privacy report
+    url: https://github.com/whoisjayd/resume/security/policy
+    about: Report secrets or private contact data privately instead of opening a public issue.

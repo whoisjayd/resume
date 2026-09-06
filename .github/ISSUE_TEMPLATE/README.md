@@ -1,0 +1,1 @@
+Issue forms are configured for reproducible bug reports and focused feature requests. Use the private security policy for secrets or personal-data exposure.
