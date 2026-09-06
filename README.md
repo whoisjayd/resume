@@ -1,7 +1,7 @@
 # Resume
 
 <p align="center">
-  <img src="resume/resume.png" alt="CV preview" width="450"/>
+  <img src="public/resume.png" alt="CV preview" width="450"/>
 </p>
 
 Current positioning: backend, platform, and cloud engineering. Projects on the CV: [NoteWise](https://github.com/whoisjayd/notewise), [BlazeServe](https://github.com/whoisjayd/blazeserve).
@@ -79,7 +79,7 @@ uv run rendercv render cv.yaml --design design.yaml --locale-catalog locale.yaml
 
 The public build intentionally omits `cv.phone` from `cv.yaml`. The public source keeps the listed email, website, LinkedIn, and GitHub links. Local `make private` reads optional `RESUME_PHONE` from ignored `.env`, creates a temporary source, and renders into ignored `resume/`; it never mutates `cv.yaml`. `make public` runs `scripts/check_public.py` after rendering and fails if the source has a phone key or public files contain phone or telephone markers.
 
-`.gitignore` protects only untracked local files. It cannot remove a tracked file or erase data from Git history. Before publishing, search the current tree and all Git refs for phone numbers, secrets, and personally identifiable information (PII). Historical secrets or PII require Git history cleanup before publication; ignore rules alone cannot make them safe.
+`.gitignore` protects only untracked local files. The repository history was rewritten locally to remove the old private `resume/` files and phone data. If this repository was already pushed, force-push the rewritten `main` branch and remove any old remote refs; GitHub caches, forks, clones, and pull-request refs may still retain the old history until removed. Before publishing, search the current tree and all Git refs for phone numbers, secrets, and personally identifiable information (PII).
 
 ## Dependency maintenance
 
