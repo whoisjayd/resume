@@ -1,4 +1,10 @@
 settings:
   current_date: today
+  bold_keywords: []
   pdf_title: NAME - CV
-  render_command: {}
+  render_command:
+    typst_path: OUTPUT_FOLDER/resume.typ
+    pdf_path: OUTPUT_FOLDER/resume.pdf
+    markdown_path: OUTPUT_FOLDER/resume.md
+    html_path: OUTPUT_FOLDER/resume.html
+    png_path: OUTPUT_FOLDER/resume.png
