@@ -34,12 +34,9 @@ jobs:
         run: uv sync --locked
 
       - name: Render Pages site
-        env:
-          SITE_DIR: ${{ runner.temp }}/resume-site
         run: |
-          mkdir -p "$SITE_DIR"
-          make render OUTPUT_DIR="$SITE_DIR"
-          printf '%s\n' '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resume</title></head><body><p><a href="resume.html">View resume</a></p></body></html>' > "$SITE_DIR/index.html"
+          make public
+          printf '%s\n' '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resume</title></head><body><p><a href="resume.html">View resume</a></p></body></html>' > public/index.html
 
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -49,7 +46,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
         with:
-          path: ${{ runner.temp }}/resume-site
+          path: public
 
   deploy:
     name: Deploy to GitHub Pages

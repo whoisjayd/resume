@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local private contact input. Keep values out of Git.
+.env
+
+# Local render outputs are reproducible and may contain private contact data.
+resume/
