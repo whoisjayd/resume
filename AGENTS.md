@@ -56,7 +56,7 @@ After changing a source YAML file, run `make check` (or `make render` when visua
 
 ## CI/CD and GitHub Pages
 
-The Pages workflow in `.github/workflows/pages.yml` is the deployment source of truth. It uses Python 3.14, `uv sync --locked`, and the locked toolchain to render the sanitized `public/` directory. Pull requests build and validate the site without deploying; pushes to the main branch configure, upload, and deploy the Pages artifact. The deployed HTML resume is served directly at `/resume.html`, with `/resume.pdf`, `/resume.png`, `/resume.md`, and `/resume.typ` available beside it. Keep the workflow's least-privilege permissions, concurrency protection, and pinned official actions intact when modifying it.
+The Pages workflow in `.github/workflows/pages.yml` is the deployment source of truth. It uses Python 3.14, `uv sync --locked`, and the locked toolchain to render the sanitized `public/` directory. `make public` generates `public/index.html` as an exact copy of `public/resume.html`, so the Pages root URL displays the resume directly; the same files remain available at `/resume.html`, `/resume.pdf`, `/resume.png`, `/resume.md`, and `/resume.typ`. Pull requests build and validate the site without deploying; pushes to the main branch configure, upload, and deploy the Pages artifact. Keep the workflow's least-privilege permissions, concurrency protection, and pinned official actions intact when modifying it.
 
 ## File ownership and cleanliness
 

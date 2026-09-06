@@ -26,7 +26,7 @@ Run `make help` to open the grouped command reference, current configuration, an
 
 ## Continuous integration and deployment
 
-The Pages workflow runs `make public`, which always renders phone-free `cv.yaml` into `public/` and uploads that directory. The deployed site serves the HTML resume directly at `/resume.html`; the other formats are available at `/resume.pdf`, `/resume.png`, `/resume.md`, and `/resume.typ`. Run `make check` locally to validate the selected local source.
+The Pages workflow runs `make public`, which always renders phone-free `cv.yaml` into `public/` and uploads that directory. `public/index.html` is an exact generated copy of the resume, so the Pages site root URL displays the resume directly; the same files are also available at `/resume.html`, `/resume.pdf`, `/resume.png`, `/resume.md`, and `/resume.typ`. Run `make check` locally to validate the selected local source.
 
 - `cv.yaml` - sanitized public content
 - `design.yaml` - `engineeringresumes` theme, colors, fonts, and spacing
