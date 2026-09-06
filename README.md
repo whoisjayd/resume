@@ -28,8 +28,6 @@ Run `make help` to open the grouped command reference, current configuration, an
 
 The Pages workflow runs `make public`, which always renders phone-free `cv.yaml` into `public/` and uploads that directory. The deployed site root contains the generated resume formats and an `index.html` link to the HTML resume. Run `make check` locally to validate the selected local source.
 
-## Layout
-
 - `cv.yaml` - sanitized public content
 - `design.yaml` - `engineeringresumes` theme, colors, fonts, and spacing
 - `locale.yaml` - English locale catalog
@@ -37,7 +35,7 @@ The Pages workflow runs `make public`, which always renders phone-free `cv.yaml`
 - `scripts/build_resume.py` - local renderer using optional `.env` contact data
 - `scripts/check_public.py` - deterministic phone-marker gate for public outputs
 - `resume/` - ignored local render outputs
-- `public/` - ignored sanitized deployment outputs
+- `public/` - tracked sanitized deployment outputs
 - `Makefile` - shortcuts for setup, rendering, validation, and cleanup
 
 ## Commands
